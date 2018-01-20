@@ -12,5 +12,5 @@ module.exports = {
         },
         require('./libs')
     ],
-    output: require('path').join(__dirname, './com')
+    output: require('path').join(__dirname, './docs')
 }
