@@ -1,0 +1,21 @@
+$belong['../layout.htm']
+<title>颜色选择器</title>
+<p>
+    <label for="color-picker">颜色选择器:</label>
+    <color-picker id="color" value="#d48265"></color-picker>
+    <em>#d48265</em>
+</p>
+
+<script>
+    let color = document.getElementById('color')
+    let n = 0
+    let interval = setInterval(function () {
+        color.value = ['#f60', '#06f', '#f0f'][++n % 3]
+    }, 1000)
+
+    color.addEventListener('change', function (e) {
+        clearInterval(interval)
+        this.nextElementSibling.innerHTML = color.value
+    })
+
+</script>

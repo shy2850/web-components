@@ -1,0 +1,43 @@
+<style>
+:host {
+    cursor: pointer;
+    display: inline-block;
+    width: 80px;
+    height: 24px;
+    background: #000;
+    position: relative;
+    overflow: visible;
+}
+
+li {
+    margin: 4px 0 0 4px;
+    padding: 0;
+    float: left;
+    width: 24px;
+    height: 24px;
+    opacity: .8;
+    list-style: none;
+}
+li:hover {
+    opacity: 1;
+}
+ul {
+    position: absolute;
+    padding: 2px 2px 4px;
+    border: 1px solid #d2d2d2;
+    top: 8px;
+    left: 0;
+    width: 170px;
+    overflow: hidden;
+    display: none;
+    background: #fff;
+    opacity: 0;
+    transition: all 5s ease;
+}
+:host(:hover) ul{
+    display: block;
+    opacity: 1;
+}
+</style>
+<ul>
+</ul>
